@@ -2,7 +2,7 @@
 html{color-scheme:dark}
 body{margin:0;min-height:100svh;overflow-x:hidden;background:#141713;color:#f4f1e7;font-family:Georgia,'Batang','바탕',serif}
 .background,.shade,.light{position:fixed;inset:0;pointer-events:none}
-.background{z-index:-3;background:url('assets/chapter3-bg.png') center center/cover no-repeat;animation:wall-breathe 58s ease-in-out infinite alternate}
+.background{z-index:-3;background:url('assets/chapter3-bg.jpg') center center/cover no-repeat;animation:wall-breathe 58s ease-in-out infinite alternate}
 .shade{z-index:-2;background:linear-gradient(90deg,rgba(9,12,10,.78),rgba(12,15,12,.51) 48%,rgba(14,16,12,.13)),linear-gradient(0deg,rgba(7,9,7,.78),transparent 57%)}
 .light{z-index:-1;background:radial-gradient(ellipse 53% 43% at 86% 8%,#ffd98f42,transparent 76%);animation:light-rises 25s ease-in-out infinite}
 header,footer{position:relative;transition:opacity .8s ease;display:flex;align-items:center;justify-content:space-between;padding:26px 6vw;color:#ede9db;font-family:system-ui,sans-serif;font-size:14px}
