@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>담쟁이 — 도종환</title>
+  <meta name="description" content="도종환의 담쟁이를 음악과 함께 읽는 시간.">
+  <link rel="stylesheet" href="chapter3.css">
+</head>
+<body>
+  <div class="background" aria-hidden="true"></div>
+  <div class="shade" aria-hidden="true"></div>
+  <div class="light" aria-hidden="true"></div>
+  <header>
+    <span>Chapter 03 · 도종환</span>
+    <nav>
+      <a href="index.html">처음으로</a>
+      <a href="chapter1.html">Chapter 01</a>
+      <a href="chapter2.html">Chapter 02</a>
+      <button id="start" class="listen" aria-pressed="false">음악 재생 <span aria-hidden="true">▷</span></button>
+    </nav>
+  </header>
+  <main>
+    <div class="title">
+      <span class="eyebrow">도종환</span>
+      <h1>담쟁이</h1>
+      <span class="rule" aria-hidden="true"></span>
+    </div>
+    <article class="poem" aria-label="담쟁이, 도종환">
+      <p class="line">저것은 벽</p>
+      <p class="line">어쩔 수 없는 벽이라고 우리가 느낄 때</p>
+      <p class="line">그때</p>
+      <p class="line">담쟁이는 말없이 그 벽을 오른다.</p>
+      <p class="line">물 한 방울 얻고 싶어서 한 잎 살아 남을 수 없는</p>
+      <p class="line">저것은 절망의 벽이라고 말할 때</p>
+      <p class="line">담쟁이는 서두르지 않고 앞으로 나아간다.</p>
+      <p class="line">한 뼘이라도 꼭 여럿이 함께 손을 잡고 올라간다.</p>
+      <p class="line">푸르게 절망을 다 덮을 때까지</p>
+      <p class="line">바로 그 절망을 잡고 놓지 않는다.</p>
+      <p class="line">저것은 넘을 수 없는 벽이라고 고개를 떨구고 있을 때</p>
+      <p class="line">담쟁이 잎 하나는 담쟁이 잎 수천 개를 이끌고</p>
+      <p class="line final">결국 그 벽을 넘는다.</p>
+    </article>
+    <div class="listening"><span class="pulse" aria-hidden="true"></span><span id="status" role="status">음악을 틀면 담쟁이가 벽을 올라갑니다</span></div>
+  </main>
+  <footer>
+    <div class="sound">
+      <button id="mute" aria-label="음소거" aria-pressed="false">소리 켜짐</button>
+      <label for="volume">음량</label>
+      <input id="volume" type="range" min="0" max="1" step="0.05" value="0.42">
+    </div>
+
+  </footer>
+  <audio id="audio" src="assets/chapter3-bgm.mp4" preload="auto" loop></audio>
+  <script src="chapter3.js"></script>
+</body>
+</html>

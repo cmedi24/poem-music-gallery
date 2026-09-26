@@ -1,0 +1,21 @@
+*{box-sizing:border-box}
+html{color-scheme:dark}
+body{margin:0;min-height:100svh;background:#111410;color:#f8f6ed;font-family:Georgia,'Batang','바탕',serif}
+.intro{position:fixed;z-index:2;left:clamp(22px,4vw,64px);top:clamp(22px,4vw,52px);margin:0;font-size:clamp(15px,1.3vw,18px);font-weight:400;letter-spacing:.22em;color:#f5f1e4cc;pointer-events:none}
+.chapters{display:grid;grid-template-columns:repeat(3,1fr);min-height:100svh}
+.chapter{position:relative;isolation:isolate;display:flex;align-items:flex-end;min-height:100svh;padding:clamp(30px,5vw,72px);overflow:hidden;color:#fff;text-decoration:none}
+.chapter::before{content:'';position:absolute;z-index:-2;inset:0;background:var(--image) center/cover no-repeat;transform:scale(1.025);transition:transform 1.2s cubic-bezier(.22,.61,.36,1)}
+.chapter::after{content:'';position:absolute;z-index:-1;inset:0;background:linear-gradient(0deg,rgba(7,10,8,.82),rgba(7,10,8,.08) 62%),linear-gradient(90deg,rgba(4,6,5,.42),transparent 74%);transition:background .8s ease}
+.chapter:hover::before,.chapter:focus-visible::before{transform:scale(1.1)}
+.chapter:hover::after,.chapter:focus-visible::after{background:linear-gradient(0deg,rgba(7,10,8,.58),rgba(7,10,8,.02) 66%),linear-gradient(90deg,rgba(4,6,5,.22),transparent 74%)}
+.chapter:focus-visible{outline:3px solid #fff7ce;outline-offset:-7px}
+.meta{position:relative;transform:translateY(10px);transition:transform .7s cubic-bezier(.22,.61,.36,1)}
+.chapter:hover .meta,.chapter:focus-visible .meta{transform:translateY(0)}
+.number{display:block;margin-bottom:14px;color:#f1e3ad;font-family:system-ui,sans-serif;font-size:12px;letter-spacing:.18em}
+h2{margin:0;font-size:clamp(36px,4vw,66px);font-weight:400;letter-spacing:.08em;line-height:1.1}
+.chapter:nth-child(2) h2{letter-spacing:.025em}
+.author{display:block;margin-top:13px;color:#fff8e6d4;font-size:clamp(15px,1.3vw,19px);letter-spacing:.1em}
+.enter{display:block;width:34px;height:1px;margin-top:26px;background:#f1df9e;transition:width .7s ease}
+.chapter:hover .enter,.chapter:focus-visible .enter{width:76px}
+@media(max-width:760px){.intro{position:absolute;left:26px;top:25px;font-size:13px}.chapters{grid-template-columns:1fr;grid-template-rows:repeat(3,1fr);min-height:100svh}.chapter{min-height:33.333svh;padding:28px}.chapter::before{background-position:center 45%}.chapter:nth-child(3)::before{background-position:center center}.number{margin-bottom:7px;font-size:10px}h2{font-size:35px}.author{margin-top:6px;font-size:14px}.enter{margin-top:14px}.chapter:hover::before{transform:scale(1.04)}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{transition:none!important}}
